@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: d900938aeee47544abcf24a28ac0a3a3
+timeCreated: 1473199763
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: AssaultBuggy_Compartment
+    100004: AssaultBuggy_Engine
+    100006: AssaultBuggy_Lights1_pSphere5
+    100008: AssaultBuggy_Lights1_pSphere7
+    100010: AssaultBuggy_Lights1_pSphere8
+    100012: AssaultBuggy_pCube27_Turret
+    100014: AssaultBuggy_pCylinder3_Wheels
+    100016: AssaultBuggy_pSphere6_Lights1
+    100018: AssaultBuggy_SkidPlate
+    100020: AssaultBuggy_Supports
+    100022: AssaultBuggy_Turret_pCube22
+    100024: AssaultBuggy_Turret_pCube23
+    100026: AssaultBuggy_Turret_pCube24
+    100028: AssaultBuggy_Turret_pCube25
+    100030: AssaultBuggy_Turret_pCube26
+    100032: AssaultBuggy_Wheels_pCylinder11
+    100034: AssaultBuggy_Wheels_pCylinder12
+    100036: AssaultBuggy_Wheels_pCylinder13
+    100038: AssaultBuggy_Wheels_pCylinder14
+    100040: AssaultBuggy_Wheels_pCylinder15
+    100042: AssaultBuggy_Wheels_pCylinder16
+    100044: AssaultBuggy_Wheels_pCylinder2
+    100046: Body_AssaultBuggy
+    100048: pCylinder17
+    400000: //RootNode
+    400002: AssaultBuggy_Compartment
+    400004: AssaultBuggy_Engine
+    400006: AssaultBuggy_Lights1_pSphere5
+    400008: AssaultBuggy_Lights1_pSphere7
+    400010: AssaultBuggy_Lights1_pSphere8
+    400012: AssaultBuggy_pCube27_Turret
+    400014: AssaultBuggy_pCylinder3_Wheels
+    400016: AssaultBuggy_pSphere6_Lights1
+    400018: AssaultBuggy_SkidPlate
+    400020: AssaultBuggy_Supports
+    400022: AssaultBuggy_Turret_pCube22
+    400024: AssaultBuggy_Turret_pCube23
+    400026: AssaultBuggy_Turret_pCube24
+    400028: AssaultBuggy_Turret_pCube25
+    400030: AssaultBuggy_Turret_pCube26
+    400032: AssaultBuggy_Wheels_pCylinder11
+    400034: AssaultBuggy_Wheels_pCylinder12
+    400036: AssaultBuggy_Wheels_pCylinder13
+    400038: AssaultBuggy_Wheels_pCylinder14
+    400040: AssaultBuggy_Wheels_pCylinder15
+    400042: AssaultBuggy_Wheels_pCylinder16
+    400044: AssaultBuggy_Wheels_pCylinder2
+    400046: Body_AssaultBuggy
+    400048: pCylinder17
+    2300000: AssaultBuggy_Compartment
+    2300002: AssaultBuggy_Engine
+    2300004: AssaultBuggy_Lights1_pSphere5
+    2300006: AssaultBuggy_Lights1_pSphere7
+    2300008: AssaultBuggy_Lights1_pSphere8
+    2300010: AssaultBuggy_pCube27_Turret
+    2300012: AssaultBuggy_pCylinder3_Wheels
+    2300014: AssaultBuggy_pSphere6_Lights1
+    2300016: AssaultBuggy_SkidPlate
+    2300018: AssaultBuggy_Supports
+    2300020: AssaultBuggy_Turret_pCube22
+    2300022: AssaultBuggy_Turret_pCube23
+    2300024: AssaultBuggy_Turret_pCube24
+    2300026: AssaultBuggy_Turret_pCube25
+    2300028: AssaultBuggy_Turret_pCube26
+    2300030: AssaultBuggy_Wheels_pCylinder11
+    2300032: AssaultBuggy_Wheels_pCylinder12
+    2300034: AssaultBuggy_Wheels_pCylinder13
+    2300036: AssaultBuggy_Wheels_pCylinder14
+    2300038: AssaultBuggy_Wheels_pCylinder15
+    2300040: AssaultBuggy_Wheels_pCylinder16
+    2300042: AssaultBuggy_Wheels_pCylinder2
+    2300044: Body_AssaultBuggy
+    2300046: pCylinder17
+    3300000: AssaultBuggy_Compartment
+    3300002: AssaultBuggy_Engine
+    3300004: AssaultBuggy_Lights1_pSphere5
+    3300006: AssaultBuggy_Lights1_pSphere7
+    3300008: AssaultBuggy_Lights1_pSphere8
+    3300010: AssaultBuggy_pCube27_Turret
+    3300012: AssaultBuggy_pCylinder3_Wheels
+    3300014: AssaultBuggy_pSphere6_Lights1
+    3300016: AssaultBuggy_SkidPlate
+    3300018: AssaultBuggy_Supports
+    3300020: AssaultBuggy_Turret_pCube22
+    3300022: AssaultBuggy_Turret_pCube23
+    3300024: AssaultBuggy_Turret_pCube24
+    3300026: AssaultBuggy_Turret_pCube25
+    3300028: AssaultBuggy_Turret_pCube26
+    3300030: AssaultBuggy_Wheels_pCylinder11
+    3300032: AssaultBuggy_Wheels_pCylinder12
+    3300034: AssaultBuggy_Wheels_pCylinder13
+    3300036: AssaultBuggy_Wheels_pCylinder14
+    3300038: AssaultBuggy_Wheels_pCylinder15
+    3300040: AssaultBuggy_Wheels_pCylinder16
+    3300042: AssaultBuggy_Wheels_pCylinder2
+    3300044: Body_AssaultBuggy
+    3300046: pCylinder17
+    4300000: AssaultBuggy_Compartment
+    4300002: AssaultBuggy_Engine
+    4300004: AssaultBuggy_Lights1_pSphere5
+    4300006: AssaultBuggy_Lights1_pSphere7
+    4300008: AssaultBuggy_Lights1_pSphere8
+    4300010: AssaultBuggy_pCube27_Turret
+    4300012: AssaultBuggy_pCylinder3_Wheels
+    4300014: AssaultBuggy_pSphere6_Lights1
+    4300016: AssaultBuggy_SkidPlate
+    4300018: AssaultBuggy_Supports
+    4300020: AssaultBuggy_Turret_pCube22
+    4300022: AssaultBuggy_Turret_pCube23
+    4300024: AssaultBuggy_Turret_pCube24
+    4300026: AssaultBuggy_Turret_pCube25
+    4300028: AssaultBuggy_Turret_pCube26
+    4300030: AssaultBuggy_Wheels_pCylinder11
+    4300032: AssaultBuggy_Wheels_pCylinder12
+    4300034: AssaultBuggy_Wheels_pCylinder13
+    4300036: AssaultBuggy_Wheels_pCylinder14
+    4300038: AssaultBuggy_Wheels_pCylinder15
+    4300040: AssaultBuggy_Wheels_pCylinder16
+    4300042: AssaultBuggy_Wheels_pCylinder2
+    4300044: Body_AssaultBuggy
+    4300046: pCylinder17
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
