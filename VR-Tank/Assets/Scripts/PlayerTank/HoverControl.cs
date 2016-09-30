@@ -59,70 +59,70 @@ public class HoverControl : MonoBehaviour
         //==========================================================================================================
         //                                  HOVER HEIGHT CALCULATION
         //----------------------------------------------------------------------------------------------------------
-        Vector3 tankPosFrontRight = tankRigidBody.transform.position + new Vector3(1.1f, 0.0f, 2.2f);
-        Vector3 tankPosBackRight = tankRigidBody.transform.position + new Vector3(1.1f, 0.0f, -2.2f);
-        Vector3 tankPosFrontLeft = tankRigidBody.transform.position + new Vector3(-1.1f, 0.0f, 2.2f);
-        Vector3 tankPosBackLeft = tankRigidBody.transform.position + new Vector3(-1.1f, 0.0f, -2.2f);
+     //   Vector3 tankPosFrontRight = tankRigidBody.transform.position + new Vector3(1.1f, 0.0f, 2.2f);
+     //   Vector3 tankPosBackRight = tankRigidBody.transform.position + new Vector3(1.1f, 0.0f, -2.2f);
+     //   Vector3 tankPosFrontLeft = tankRigidBody.transform.position + new Vector3(-1.1f, 0.0f, 2.2f);
+     //   Vector3 tankPosBackLeft = tankRigidBody.transform.position + new Vector3(-1.1f, 0.0f, -2.2f);
 
-        Ray rayFrontRight = new Ray(tankPosFrontRight, new Vector3(0.0f, -1.0f, 0.0f));
-        Ray rayBackRight = new Ray(tankPosBackRight, new Vector3(0.0f, -1.0f, 0.0f));
-        Ray rayFrontLeft = new Ray(tankPosFrontLeft, new Vector3(0.0f, -1.0f, 0.0f));
-        Ray rayBackLeft = new Ray(tankPosBackLeft, new Vector3(0.0f, -1.0f, 0.0f));
+     //   Ray rayFrontRight = new Ray(tankPosFrontRight, new Vector3(0.0f, -1.0f, 0.0f));
+     //   Ray rayBackRight = new Ray(tankPosBackRight, new Vector3(0.0f, -1.0f, 0.0f));
+     //   Ray rayFrontLeft = new Ray(tankPosFrontLeft, new Vector3(0.0f, -1.0f, 0.0f));
+     //   Ray rayBackLeft = new Ray(tankPosBackLeft, new Vector3(0.0f, -1.0f, 0.0f));
 
-        RaycastHit hitFrontRight;
-        RaycastHit hitBackRight;
-        RaycastHit hitFrontLeft;
-        RaycastHit hitBackLeft;
+     //   RaycastHit hitFrontRight;
+     //   RaycastHit hitBackRight;
+     //   RaycastHit hitFrontLeft;
+     //   RaycastHit hitBackLeft;
 
-        Vector3 appliedHFFR = new Vector3(0, 0, 0);
-        Vector3 appliedHFBR = new Vector3(0, 0, 0);
-        Vector3 appliedHFFL = new Vector3(0, 0, 0);
-        Vector3 appliedHFBL = new Vector3(0, 0, 0);
+     //   Vector3 appliedHFFR = new Vector3(0, 0, 0);
+     //   Vector3 appliedHFBR = new Vector3(0, 0, 0);
+     //   Vector3 appliedHFFL = new Vector3(0, 0, 0);
+     //   Vector3 appliedHFBL = new Vector3(0, 0, 0);
 
 
-        if ( Physics.Raycast(rayFrontRight, out hitFrontRight, maxDistance))
-        {
-            // averageHeight += hitFrontRight.distance;
-            float proportionalHeight = 1 - (hitFrontRight.distance - (hitFrontRight.distance / maxDistance));
-            appliedHFFR = Vector3.up * proportionalHeight * hoverForce/* * Time.deltaTime*/;   
-            averageAngle += hitFrontRight.normal;
-        }
+     //   if ( Physics.Raycast(rayFrontRight, out hitFrontRight, maxDistance))
+     //   {
+     //       // averageHeight += hitFrontRight.distance;
+     //       float proportionalHeight = 1 - (hitFrontRight.distance - (hitFrontRight.distance / maxDistance));
+     //       appliedHFFR = Vector3.up * proportionalHeight * hoverForce/* * Time.deltaTime*/;   
+     //       averageAngle += hitFrontRight.normal;
+     //   }
 
-        if (Physics.Raycast(rayBackRight, out hitBackRight, maxDistance))
-        {
-            // averageHeight += hitBackRight.distance;
-            float proportionalHeight = 1 - (hitBackRight.distance - (hitBackRight.distance / maxDistance));//(maxDistance - hitBackRight.distance) / maxDistance;
-            appliedHFBR = Vector3.up * proportionalHeight * hoverForce /** Time.deltaTime*/;
+     //   if (Physics.Raycast(rayBackRight, out hitBackRight, maxDistance))
+     //   {
+     //       // averageHeight += hitBackRight.distance;
+     //       float proportionalHeight = 1 - (hitBackRight.distance - (hitBackRight.distance / maxDistance));//(maxDistance - hitBackRight.distance) / maxDistance;
+     //       appliedHFBR = Vector3.up * proportionalHeight * hoverForce /** Time.deltaTime*/;
 
-            averageAngle += hitBackRight.normal; }
+     //       averageAngle += hitBackRight.normal; }
 
-        if (Physics.Raycast(rayFrontLeft, out hitFrontLeft, maxDistance))
-        {
-            //averageHeight += hitFrontLeft.distance;
-            float proportionalHeight = 1 - (hitFrontLeft.distance - (hitFrontLeft.distance / maxDistance));
-            appliedHFFL = Vector3.up * proportionalHeight * hoverForce /** Time.deltaTime*/;
-            averageAngle += hitFrontLeft.normal;
-        }
+     //   if (Physics.Raycast(rayFrontLeft, out hitFrontLeft, maxDistance))
+     //   {
+     //       //averageHeight += hitFrontLeft.distance;
+     //       float proportionalHeight = 1 - (hitFrontLeft.distance - (hitFrontLeft.distance / maxDistance));
+     //       appliedHFFL = Vector3.up * proportionalHeight * hoverForce /** Time.deltaTime*/;
+     //       averageAngle += hitFrontLeft.normal;
+     //   }
 
-        if (Physics.Raycast(rayBackLeft, out hitBackLeft, maxDistance))
-        {
-            //  averageHeight += hitBackLeft.distance;
-            float proportionalHeight = 1 - (hitBackLeft.distance - (hitBackLeft.distance / maxDistance));
-            appliedHFBL = Vector3.up * proportionalHeight * hoverForce /** Time.deltaTime*/;
+     //   if (Physics.Raycast(rayBackLeft, out hitBackLeft, maxDistance))
+     //   {
+     //       //  averageHeight += hitBackLeft.distance;
+     //       float proportionalHeight = 1 - (hitBackLeft.distance - (hitBackLeft.distance / maxDistance));
+     //       appliedHFBL = Vector3.up * proportionalHeight * hoverForce /** Time.deltaTime*/;
            
-            averageAngle += hitBackRight.normal;
-        }
+     //       averageAngle += hitBackRight.normal;
+     //   }
 
         
-     // tankRigidBody.AddForceAtPosition()
+     //// tankRigidBody.AddForceAtPosition()
 
-      //  averageHeight /= 4;
-        averageAngle /= 4;
+     // //  averageHeight /= 4;
+     //   averageAngle /= 4;
 
-        tankRigidBody.AddForceAtPosition(appliedHFFR, tankPosFrontRight, ForceMode.Acceleration);
-        tankRigidBody.AddForceAtPosition(appliedHFBR, tankPosBackRight, ForceMode.Acceleration);
-        tankRigidBody.AddForceAtPosition(appliedHFFL, tankPosFrontLeft, ForceMode.Acceleration);
-        tankRigidBody.AddForceAtPosition(appliedHFBL, tankPosBackLeft, ForceMode.Acceleration);
+     //   tankRigidBody.AddForceAtPosition(appliedHFFR, tankPosFrontRight, ForceMode.Acceleration);
+     //   tankRigidBody.AddForceAtPosition(appliedHFBR, tankPosBackRight, ForceMode.Acceleration);
+     //   tankRigidBody.AddForceAtPosition(appliedHFFL, tankPosFrontLeft, ForceMode.Acceleration);
+     //   tankRigidBody.AddForceAtPosition(appliedHFBL, tankPosBackLeft, ForceMode.Acceleration);
 
         //float proportionalHeight = (maxDistance - averageHeight) / maxDistance;
         //Vector3 appliedHoverForce = Vector3.up * proportionalHeight * hoverForce;
@@ -153,16 +153,16 @@ public class HoverControl : MonoBehaviour
 
         powerInput = RightMove + LeftMove;
         turnInput = -RightMove + LeftMove;
-        tankRigidBody.AddRelativeForce(0f, 0f, powerInput * speed);
+        // tankRigidBody.AddRelativeForce(0f, 0f, powerInput * speed);
         tankRigidBody.transform.Rotate(Vector3.up, turnInput * turnSpeed * Time.deltaTime);
 
-        //fr.motorTorque = TorqueR * RightMove;
-        //br.motorTorque = TorqueR * RightMove;
-        //mr.motorTorque = TorqueR * RightMove;
+        fr.motorTorque = Torque * powerInput;
+        br.motorTorque = Torque * powerInput;
+        mr.motorTorque = Torque * powerInput;
 
-        //fl.motorTorque = TorqueL * LeftMove;
-        //bl.motorTorque = TorqueL * LeftMove;
-        //ml.motorTorque = TorqueL * LeftMove;
+        fl.motorTorque = Torque * powerInput;
+        bl.motorTorque = Torque * powerInput;
+        ml.motorTorque = Torque * powerInput;
 
     }
 
