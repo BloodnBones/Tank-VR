@@ -65,8 +65,8 @@ public class shoot_First : MonoBehaviour
         //Vector3 SpawnPos = transform.position;
         Transform bulletClone;
         //Vector3 power = new Vector3(0, 0.1f, 0);
-        Quaternion CloneRotation = BarrelEnd.transform.localRotation;
-        CloneRotation.x = BarrelEnd.transform.rotation.x + (Mathf.Deg2Rad * -90);
+        Quaternion CloneRotation = turret.transform.rotation;
+        CloneRotation.x = BarrelEnd.transform.rotation.x/* + (Mathf.Deg2Rad * -90)*/;
         bulletClone = Instantiate(Bullet, transform.position, CloneRotation) as Transform;
 
         bulletClone.GetComponent<Rigidbody>().AddForce((transform.forward) * Firepower, ForceMode.Impulse);
