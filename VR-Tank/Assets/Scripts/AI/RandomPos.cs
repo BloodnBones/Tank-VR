@@ -45,7 +45,7 @@ public class RandomPos : MonoBehaviour {
             RandomZ = 0;
         }
         newPos = new Vector3(RandomX, oldPos.y, RandomZ);
-        transform.position = new Vector3(RandomX, 0, RandomZ);
+        transform.position = newPos;
 
         canChange = true;
 
