@@ -10,6 +10,7 @@ public class rotateTank : MonoBehaviour
     public GameObject Camera;
     public Component CameraComp;
     public GameObject Tank;
+    public GameObject OVR;
 
 
 
@@ -22,6 +23,10 @@ public class rotateTank : MonoBehaviour
     public float rotSpeed;
     public Quaternion Target;
     public Quaternion Target1;
+
+
+    public GameObject xRot;
+    public GameObject yRot;
     // Use this for initialization
     void Start()
     {
@@ -35,7 +40,12 @@ public class rotateTank : MonoBehaviour
         CameraComp = Camera.GetComponent<Camera>();
 
         //=============================ROTATE TANK TURRET=============================
-
+        if(VR == false)
+        {
+            Quaternion newAngle = new Quaternion();
+            newAngle.eulerAngles = new Vector3(xRot.transform.rotation.eulerAngles.x, yRot.transform.rotation.eulerAngles.y, 0.0f);
+            OVR.transform.rotation = newAngle;
+        }
         if (VR)
         {
             Vector3 tankRotation = Tank.transform.rotation.eulerAngles;

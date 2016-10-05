@@ -11,6 +11,8 @@ public class shoot_First : MonoBehaviour
     public GameObject turret;
     Quaternion Nrotation;
     public GameObject BarrelEnd;
+
+    Vector3 Barrel_Local;
     // Use this for initialization
 
 
@@ -19,7 +21,7 @@ public class shoot_First : MonoBehaviour
 
     void Start()
     {
-       
+        Barrel_Local = transform.position;
     }
 
     // Update is called once per frame
