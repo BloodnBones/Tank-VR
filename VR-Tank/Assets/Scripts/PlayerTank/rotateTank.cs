@@ -74,9 +74,9 @@ public class rotateTank : MonoBehaviour
             missileLaunchers.transform.Rotate(Vector3.left, h);
         }else
         {
-            float h = 0.2f * Input.GetAxis("Pitch");
-            tankBarrell.transform.Rotate(Vector3.left, h);
-            missileLaunchers.transform.Rotate(Vector3.left, h / 3);
+            //float h = 0.2f * Input.GetAxis("Pitch");
+            //tankBarrell.transform.Rotate(Vector3.left, h);
+            //missileLaunchers.transform.Rotate(Vector3.left, h / 3);
         }
     }
 

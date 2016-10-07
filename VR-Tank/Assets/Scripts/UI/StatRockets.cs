@@ -6,41 +6,41 @@ using System;
 public class StatRockets
 {
 
-	public BarControl bar;
-	public float maxVal;
-	public float currentVal;
+    public BarControl bar;
+    public float maxVal;
+    public float currentVal;
 
-	public float CurrentVal
-	{
-		get
-		{
-			return currentVal;
-		}
+    public float CurrentVal
+    {
+        get
+        {
+            return currentVal;
+        }
 
-		set
-		{
-			this.currentVal = Mathf.Clamp(value, 0, maxVal);
-			bar.Value = currentVal;
-		}
-	}
-	public float MaxVal
-	{
-		get
-		{
-			return maxVal;
-		}
+        set
+        {
+            this.currentVal = Mathf.Clamp(value, 0, maxVal);
+            bar.Value = currentVal;
+        }
+    }
+    public float MaxVal
+    {
+        get
+        {
+            return maxVal;
+        }
 
-		set
-		{
-			this.maxVal = value;
-			bar.MaxValue = maxVal;
-		}
-	}
+        set
+        {
+            this.maxVal = value;
+            bar.MaxValue = maxVal;
+        }
+    }
 
-	public void Initialise()
-	{
-		this.MaxVal = maxVal;
-		this.CurrentVal = currentVal;
-	}
+    public void Initialise()
+    {
+        this.MaxVal = maxVal;
+        this.CurrentVal = currentVal;
+    }
 
 }
