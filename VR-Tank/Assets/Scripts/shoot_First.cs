@@ -5,7 +5,7 @@ public class shoot_First : MonoBehaviour
 {
 
     bool canShoot = true;
-    float fireRate = 1.0f;
+    float fireRate = 0.1f;
     public Transform Bullet;
     public float Firepower = 10;
     public GameObject turret;
@@ -29,7 +29,7 @@ public class shoot_First : MonoBehaviour
         //Nrotation.x = BarrelEnd.transform.localRotation.x;
         //transform.rotation = Nrotation;
 
-
+        //Debug.DrawLine(transform.position, Vector3.forward, Color.red, 5.0f);
         fireRate -= Time.deltaTime;
         if (fireRate > 0)
         {
@@ -46,7 +46,7 @@ public class shoot_First : MonoBehaviour
                 GetComponent<AudioSource>().Play();
                 shoot();
                 fireRate = 1.0f;
-          
+                
             }
         }
     }
@@ -65,8 +65,8 @@ public class shoot_First : MonoBehaviour
         //Vector3 SpawnPos = transform.position;
         Transform bulletClone;
         //Vector3 power = new Vector3(0, 0.1f, 0);
-        Quaternion CloneRotation = BarrelEnd.transform.localRotation;
-        CloneRotation.x = BarrelEnd.transform.rotation.x + (Mathf.Deg2Rad * -90);
+        Quaternion CloneRotation = turret.transform.rotation;
+        CloneRotation.x = BarrelEnd.transform.rotation.x /*+ (Mathf.Deg2Rad * -90)*/;
         bulletClone = Instantiate(Bullet, transform.position, CloneRotation) as Transform;
 
         bulletClone.GetComponent<Rigidbody>().AddForce((transform.forward) * Firepower, ForceMode.Impulse);

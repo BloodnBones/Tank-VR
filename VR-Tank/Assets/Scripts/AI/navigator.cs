@@ -4,7 +4,7 @@ using System.Collections;
 public class navigator : MonoBehaviour
 {
 
-    GameObject target;
+    public GameObject target;
     NavMeshAgent agent;
     bool targetSet = false;
     // Use this for initialization
@@ -19,22 +19,33 @@ public class navigator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.tag != "Hard")
+        if (gameObject.tag == "Hard")
         {
             target = FindClosestEnemy();
         }
-        else if(!targetSet)
+        else if (!targetSet)
         {
-            target = GameObject.FindGameObjectWithTag("Player");
-            targetSet = true; 
+            if (GameObject.Find("TowerTHING"))
+            {
+                target = GameObject.Find("TowerTHING");
+            }
+            targetSet = true;
         }
-        agent.SetDestination(target.transform.position);
+        if (Vector3.Distance(transform.position, target.transform.position) < 30 || target == null)
+        {
+            agent.Stop();
+        }
+        else
+        {
+            agent.SetDestination(target.transform.position);
+        }
     }
 
     GameObject FindClosestEnemy()
     {
+        Debug.Log("looking");
         GameObject[] gos;
-        gos = GameObject.FindGameObjectsWithTag("Random");
+        gos = GameObject.FindGameObjectsWithTag("Player");
         GameObject closest = null;
         float distance = Mathf.Infinity;
         Vector3 position = transform.position;
