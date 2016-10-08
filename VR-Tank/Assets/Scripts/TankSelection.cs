@@ -21,11 +21,19 @@ public class TankSelection : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Models[selectedTank].transform.Rotate(new Vector3(0.0f, 30.0f * Time.deltaTime, 0.0f));
+        foreach(GameObject t in Models)
+        {
+            t.transform.Rotate(new Vector3(0.0f, 30.0f * Time.deltaTime, 0.0f));
+        }
 	if(Input.GetKeyDown(KeyCode.A))
         {
-            if(selectedTank > 0)
+            if (selectedTank == 0)
             {
+                Models[selectedTank].SetActive(false);
+                selectedTank = Models.Count - 1;
+                Models[selectedTank].SetActive(true);
+            }
+            else { 
                 Models[selectedTank].SetActive(false);
                 selectedTank--;
                 Models[selectedTank].SetActive(true);
@@ -33,8 +41,13 @@ public class TankSelection : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            if (selectedTank < Models.Count - 1)
+            if (selectedTank == Models.Count - 1)
             {
+                Models[selectedTank].SetActive(false);
+                selectedTank = 0;
+                Models[selectedTank].SetActive(true);
+            }
+            else { 
                 Models[selectedTank].SetActive(false);
                 selectedTank++;
                 Models[selectedTank].SetActive(true);
