@@ -15,7 +15,7 @@ public class Drone_Shoot : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        target = GameObject.FindGameObjectWithTag("Easy");
+        target = GameObject.FindGameObjectWithTag("Player");
     }
 	
 	// Update is called once per frame

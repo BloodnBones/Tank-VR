@@ -71,6 +71,25 @@ public class HoverControl : MonoBehaviour
         bl.motorTorque = Torque * powerInput;
         ml.motorTorque = Torque * powerInput;
 
+        if ((RightMove > 0.1 || LeftMove > 0.1) || (RightMove < -0.1 || LeftMove < -0.1))
+        {
+            GetComponent<AudioSource>().volume = Mathf.Lerp(0.4f, 1, Time.time * 0.3f);
+            if (!GetComponent<AudioSource>().isPlaying)
+            {
+                GetComponent<AudioSource>().Play();
+            }
+        }
+        else
+        {
+            GetComponent<AudioSource>().volume = Mathf.Lerp(1, 0, Time.time * 0.3f);
+            if (GetComponent<AudioSource>().volume < 0.2)
+            {
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().volume = 1;
+            }
+        }
+
+
     }
 
     void FixedUpdate()

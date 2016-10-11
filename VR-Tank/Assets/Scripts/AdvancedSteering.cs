@@ -18,6 +18,7 @@ public class AdvancedSteering : MonoBehaviour
 
     void Start()
     {
+        chasee = GameObject.FindGameObjectWithTag("Player");
         Drones = new GameObject[flockSize];
         for (var i = 0; i < flockSize; i++)
         {

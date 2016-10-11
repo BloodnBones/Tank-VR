@@ -7,6 +7,7 @@ public class TankSelection : MonoBehaviour {
 
     private List<GameObject> Models;
     private int selectedTank = 0;
+    GameObject selection;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +28,7 @@ public class TankSelection : MonoBehaviour {
         }
 	if(Input.GetKeyDown(KeyCode.A))
         {
+            GetComponent<AudioSource>().Play();
             if (selectedTank == 0)
             {
                 Models[selectedTank].SetActive(false);
@@ -41,6 +43,7 @@ public class TankSelection : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
+            GetComponent<AudioSource>().Play();
             if (selectedTank == Models.Count - 1)
             {
                 Models[selectedTank].SetActive(false);
@@ -55,7 +58,12 @@ public class TankSelection : MonoBehaviour {
         }
         if(Input.GetKeyDown(KeyCode.Return))
         {
-            GameObject.Find("ImortemJoe").GetComponent<Inheritance>().SetTank(selectedTank);
+            GetComponent<AudioSource>().Play();
+            selection = GameObject.Find("ImortemJoe");
+            if (selection != null)
+            { 
+            selection.GetComponent<Inheritance>().SetTank(selectedTank);
+            }
             SceneManager.LoadScene("TestZone");
 
         }
