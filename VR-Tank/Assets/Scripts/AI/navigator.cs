@@ -23,6 +23,10 @@ public class navigator : MonoBehaviour
         {
             target = FindClosestEnemy();
         }
+        else if (gameObject.tag == "Easy")
+        {
+            target = FindClosestRandom();
+        }
         else if (!targetSet)
         {
             if (GameObject.Find("TowerTHING"))
@@ -43,9 +47,28 @@ public class navigator : MonoBehaviour
 
     GameObject FindClosestEnemy()
     {
-        Debug.Log("looking");
         GameObject[] gos;
         gos = GameObject.FindGameObjectsWithTag("Player");
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = transform.position;
+        foreach (GameObject go in gos)
+        {
+            Vector3 diff = go.transform.position - position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance)
+            {
+                closest = go;
+                distance = curDistance;
+            }
+        }
+        return closest;
+    }
+
+    GameObject FindClosestRandom()
+    {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Random");
         GameObject closest = null;
         float distance = Mathf.Infinity;
         Vector3 position = transform.position;
