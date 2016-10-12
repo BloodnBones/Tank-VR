@@ -54,7 +54,6 @@ public class HoverControl : MonoBehaviour
 
     void Update()
     {
-
         float RightMove = Input.GetAxis("Vertical");
         float LeftMove = Input.GetAxis("Horizontal");
 
@@ -88,14 +87,10 @@ public class HoverControl : MonoBehaviour
                 GetComponent<AudioSource>().volume = 1;
             }
         }
-
-
     }
 
     void FixedUpdate()
     {
-        
-
         if (Input.GetButtonDown("Fire"))
         {
             rockets.CurrentVal -= 1;

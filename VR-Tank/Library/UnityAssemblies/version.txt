@@ -1,5 +1,6 @@
 5.4.0f3:2.3.0.0
 StandaloneWindows
+<<<<<<< Updated upstream
 C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll
 C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
 C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
@@ -12,4 +13,18 @@ C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/Unity
 C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll
 C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll
 C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll
+=======
+H:/U5.4/Unity/Editor/Data/Managed/UnityEngine.dll
+H:/U5.4/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
+H:/U5.4/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+H:/U5.4/Unity/Editor/Data/Managed/UnityEditor.dll
+H:/U5.4/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll
+H:/U5.4/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll
+H:/U5.4/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll
+H:/U5.4/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll
+H:/U5.4/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll
+H:/U5.4/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll
+H:/U5.4/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll
+H:/U5.4/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll
+>>>>>>> Stashed changes
 C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/2015/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll

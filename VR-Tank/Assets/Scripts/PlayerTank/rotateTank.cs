@@ -19,14 +19,12 @@ public class rotateTank : MonoBehaviour
     //public Animator Firing;
 
     float mouseX;
+    float mouseY;
 
     public float rotSpeed;
     public Quaternion Target;
     public Quaternion Target1;
 
-
-    public GameObject xRot;
-    public GameObject yRot;
     // Use this for initialization
     void Start()
     {
@@ -43,7 +41,7 @@ public class rotateTank : MonoBehaviour
         if(VR == false)
         {
             Quaternion newAngle = new Quaternion();
-            newAngle.eulerAngles = new Vector3(xRot.transform.rotation.eulerAngles.x, yRot.transform.rotation.eulerAngles.y, 0.0f);
+            newAngle.eulerAngles = new Vector3(tankBarrell.transform.rotation.eulerAngles.x, tankTurret.transform.rotation.eulerAngles.y, 0.0f);
             OVR.transform.rotation = newAngle;
         }
         if (VR)
@@ -71,12 +69,15 @@ public class rotateTank : MonoBehaviour
             }
             //float z = missileLaunchers.transform.rotation.eulerAngles.x - CameraComp.transform.rotation.eulerAngles.x;
             tankBarrell.transform.Rotate(Vector3.left, h);
-            missileLaunchers.transform.Rotate(Vector3.left, h);
-        }else
+            //missileLaunchers.transform.Rotate(Vector3.left, h);
+        }
+        else
         {
-            float h = 0.2f * Input.GetAxis("Pitch");
-            tankBarrell.transform.Rotate(Vector3.left, h);
-            //missileLaunchers.transform.Rotate(Vector3.left, h / 3);
+            if (Input.mousePosition.y != mouseY)
+            {
+                float RotX = (Input.mousePosition.x - mouseX);
+                tankTurret.transform.Rotate(0, RotX, 0);
+            }
         }
     }
 
