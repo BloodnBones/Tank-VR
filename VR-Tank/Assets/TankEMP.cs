@@ -46,7 +46,9 @@ public class TankEMP : MonoBehaviour
     IEnumerator stopEMP()
     {
         yield return new WaitForSeconds(duration);
+        
         empGo = false;
+        Debug.Log(empGo);
         GetComponent<navigator>().enabled = true;
         rotation.enabled = true;
         guns.enabled = true;

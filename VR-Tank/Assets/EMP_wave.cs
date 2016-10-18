@@ -30,6 +30,10 @@ public class EMP_wave : MonoBehaviour {
             {
                 transform.localScale -= new Vector3(20, 20, 20) * Time.deltaTime * growFactor;
             }
+            else
+            {
+                transform.localScale = Vector3.zero;
+            }
         }
 	}
 }

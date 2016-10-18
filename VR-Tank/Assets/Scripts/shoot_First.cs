@@ -61,7 +61,14 @@ public class shoot_First : MonoBehaviour
         FindCloseEnemies();
         foreach (GameObject obj in enemies)
         {
-            obj.GetComponent<TankEMP>().empGo = true;
+            if (obj.name == "HardTank(Clone)")
+            {
+                obj.GetComponent<TankEMP>().empGo = true;
+            }
+            else if (obj.name == "hover_buggy(Clone)")
+            {
+                obj.GetComponent<BuggyEMP>().empGo = true;
+            }
         }
         StartCoroutine("stopEMP");
     }
