@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ad08bc054e947ac4bb1cf0f4d469a2ed
+timeCreated: 1473157574
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Sheeping Dogs
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0755dc7efc60615499a99d0ac70b3104, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

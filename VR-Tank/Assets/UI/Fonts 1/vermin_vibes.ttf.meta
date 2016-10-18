@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4fe635e621bb09a49b77143b0bd703a8
+timeCreated: 1473157579
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Vermin Vibes
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 679e67dd02ab24c4084660905f532498, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

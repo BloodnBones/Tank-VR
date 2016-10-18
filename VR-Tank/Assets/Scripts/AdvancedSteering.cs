@@ -33,6 +33,7 @@ public class AdvancedSteering : MonoBehaviour
             _Drone.transform.parent = transform;
             _Drone.transform.localPosition = position;
             _Drone.GetComponent<Flock>().SetController(gameObject);
+            _Drone.GetComponent<DroneDeath>().setIndex(i);
             Drones[i] = _Drone;
         }
     }
@@ -44,8 +45,15 @@ public class AdvancedSteering : MonoBehaviour
 
         foreach (GameObject Agent in Drones)
         {
-            theCenter = theCenter + Agent.transform.localPosition;
-            theVelocity = theVelocity + Agent.GetComponent<Rigidbody>().velocity;
+            if (Agent != null)
+            {
+                if (Agent.GetComponent<DroneDeath>().isDead)
+                {
+                    Drones[Agent.GetComponent<DroneDeath>().index] = null;
+                }
+                theCenter = theCenter + Agent.transform.localPosition;
+                theVelocity = theVelocity + Agent.GetComponent<Rigidbody>().velocity;
+            }
         }
 
         flockCenter = theCenter / (flockSize);

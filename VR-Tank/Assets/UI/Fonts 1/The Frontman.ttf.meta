@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: bec39815d437a5646871973dd2ebf2bc
+timeCreated: 1473157587
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - The Frontman
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b3b72bb9ebb24df4e9017d89643bdfc5, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,8 +9,7 @@ public class SteeringSystem : MonoBehaviour
     public float moveSpeed = 1.0f;
     public float rotationSpeed = 1.0f;
 
-    int minDistance = 1;
-    int safeDistance = 60;
+    
 
     static float t = 0.0f;
     float maxy = 0.05f;

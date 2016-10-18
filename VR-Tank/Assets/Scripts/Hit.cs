@@ -20,7 +20,7 @@ public class Hit : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
+
         GameObject hit = Instantiate(HitParticle, transform.position, transform.rotation) as GameObject;
         Destroy(gameObject);
     }

@@ -1,112 +1,70 @@
 fileFormatVersion: 2
-guid: ebee90bd2b310834c86bafb6654234cb
-timeCreated: 1475803014
+guid: 786fafc78295a05418a1944c14630a20
+timeCreated: 1476233398
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: pCube11
-    100004: pCube12
-    100006: pCube15
-    100008: pCube17
-    100010: pCube18
-    100012: pCube9
-    100014: pCylinder12
-    100016: pCylinder13
-    100018: pCylinder14
-    100020: pCylinder15
-    100022: pCylinder16
-    100024: pCylinder17
-    100026: pCylinder18
-    100028: pCylinder19
-    100030: pCylinder20
-    100032: pCylinder21
-    100034: pCylinder22
-    100036: pCylinder23
-    100038: pCylinder7
-    100040: polySurface2
-    400000: //RootNode
-    400002: pCube11
-    400004: pCube12
-    400006: pCube15
-    400008: pCube17
-    400010: pCube18
-    400012: pCube9
-    400014: pCylinder12
-    400016: pCylinder13
-    400018: pCylinder14
-    400020: pCylinder15
-    400022: pCylinder16
-    400024: pCylinder17
-    400026: pCylinder18
-    400028: pCylinder19
-    400030: pCylinder20
-    400032: pCylinder21
-    400034: pCylinder22
-    400036: pCylinder23
-    400038: pCylinder7
-    400040: polySurface2
-    2300000: pCube11
-    2300002: pCube12
-    2300004: pCube15
-    2300006: pCube17
-    2300008: pCube18
-    2300010: pCube9
-    2300012: pCylinder12
-    2300014: pCylinder13
-    2300016: pCylinder14
-    2300018: pCylinder15
-    2300020: pCylinder16
-    2300022: pCylinder17
-    2300024: pCylinder18
-    2300026: pCylinder19
-    2300028: pCylinder20
-    2300030: pCylinder21
-    2300032: pCylinder22
-    2300034: pCylinder23
-    2300036: pCylinder7
-    2300038: polySurface2
-    3300000: pCube11
-    3300002: pCube12
-    3300004: pCube15
-    3300006: pCube17
-    3300008: pCube18
-    3300010: pCube9
-    3300012: pCylinder12
-    3300014: pCylinder13
-    3300016: pCylinder14
-    3300018: pCylinder15
-    3300020: pCylinder16
-    3300022: pCylinder17
-    3300024: pCylinder18
-    3300026: pCylinder19
-    3300028: pCylinder20
-    3300030: pCylinder21
-    3300032: pCylinder22
-    3300034: pCylinder23
-    3300036: pCylinder7
-    3300038: polySurface2
-    4300000: polySurface2
-    4300002: pCube9
-    4300004: pCylinder7
-    4300006: pCube11
-    4300008: pCube12
-    4300010: pCylinder12
-    4300012: pCylinder13
-    4300014: pCube15
-    4300016: pCylinder14
-    4300018: pCube17
-    4300020: pCylinder15
-    4300022: pCube18
-    4300024: pCylinder16
-    4300026: pCylinder17
-    4300028: pCylinder18
-    4300030: pCylinder19
-    4300032: pCylinder20
-    4300034: pCylinder21
-    4300036: pCylinder22
-    4300038: pCylinder23
+    100000: body
+    100002: //RootNode
+    100004: mingun_base
+    100006: minigun
+    100008: minigun_swivel
+    100010: polySurface1
+    100012: polySurface2
+    100014: polySurface3
+    100016: polySurface5
+    100018: polySurface6
+    100020: polySurface7
+    100022: wing_axis
+    100024: wings
+    400000: body
+    400002: //RootNode
+    400004: mingun_base
+    400006: minigun
+    400008: minigun_swivel
+    400010: polySurface1
+    400012: polySurface2
+    400014: polySurface3
+    400016: polySurface5
+    400018: polySurface6
+    400020: polySurface7
+    400022: wing_axis
+    400024: wings
+    2300000: body
+    2300002: mingun_base
+    2300004: minigun
+    2300006: minigun_swivel
+    2300008: polySurface1
+    2300010: polySurface2
+    2300012: polySurface3
+    2300014: polySurface5
+    2300016: polySurface6
+    2300018: polySurface7
+    2300020: wing_axis
+    3300000: body
+    3300002: mingun_base
+    3300004: minigun
+    3300006: minigun_swivel
+    3300008: polySurface1
+    3300010: polySurface2
+    3300012: polySurface3
+    3300014: polySurface5
+    3300016: polySurface6
+    3300018: polySurface7
+    3300020: wing_axis
+    4300000: wing_axis
+    4300002: polySurface1
+    4300004: polySurface2
+    4300006: polySurface3
+    4300008: polySurface5
+    4300010: polySurface6
+    4300012: polySurface7
+    4300014: body
+    4300016: minigun_swivel
+    4300018: mingun_base
+    4300020: minigun
+    7400000: Drone Animation
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -128,7 +86,61 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Drone Animation
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: minigun_swivel
+        weight: 1
+      - path: minigun_swivel/mingun_base
+        weight: 1
+      - path: minigun_swivel/mingun_base/minigun
+        weight: 1
+      - path: wing_axis
+        weight: 1
+      - path: wings
+        weight: 1
+      - path: wings/polySurface1
+        weight: 1
+      - path: wings/polySurface2
+        weight: 1
+      - path: wings/polySurface3
+        weight: 1
+      - path: wings/polySurface5
+        weight: 1
+      - path: wings/polySurface6
+        weight: 1
+      - path: wings/polySurface7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []

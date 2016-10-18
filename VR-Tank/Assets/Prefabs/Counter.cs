@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+
 using System.Collections;
 
 [AddComponentMenu("Utilities/HUDFPS")]
@@ -29,7 +30,7 @@ public class Counter : MonoBehaviour
 
     void Start()
     {
-        Application.targetFrameRate = 300;
+        Application.targetFrameRate = 200;
         StartCoroutine(FPS());
     }
 

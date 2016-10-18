@@ -35,14 +35,13 @@ public class navigator : MonoBehaviour
             }
             targetSet = true;
         }
-        if (Vector3.Distance(transform.position, target.transform.position) < 30 || target == null)
-        {
-            agent.Stop();
-        }
-        else
-        {
+        //if (Vector3.Distance(transform.position, target.transform.position) < 30 || target == null)
+        //{
+        //    agent.Stop();
+        //}
+        
             agent.SetDestination(target.transform.position);
-        }
+        
     }
 
     GameObject FindClosestEnemy()

@@ -54,6 +54,7 @@ public class HoverControl : MonoBehaviour
 
     void Update()
     {
+
         float RightMove = Input.GetAxis("Vertical");
         float LeftMove = Input.GetAxis("Horizontal");
 
@@ -72,7 +73,7 @@ public class HoverControl : MonoBehaviour
 
         if ((RightMove > 0.1 || LeftMove > 0.1) || (RightMove < -0.1 || LeftMove < -0.1))
         {
-            GetComponent<AudioSource>().volume = Mathf.Lerp(0.4f, 1, Time.time * 0.3f);
+            GetComponent<AudioSource>().pitch = Mathf.Lerp(GetComponent<AudioSource>().pitch, 3, Time.time * 0.003f);
             if (!GetComponent<AudioSource>().isPlaying)
             {
                 GetComponent<AudioSource>().Play();
@@ -80,17 +81,17 @@ public class HoverControl : MonoBehaviour
         }
         else
         {
-            GetComponent<AudioSource>().volume = Mathf.Lerp(1, 0, Time.time * 0.3f);
-            if (GetComponent<AudioSource>().volume < 0.2)
-            {
-                GetComponent<AudioSource>().Stop();
-                GetComponent<AudioSource>().volume = 1;
-            }
+            GetComponent<AudioSource>().pitch = Mathf.Lerp(GetComponent<AudioSource>().pitch, 1, Time.time * 0.002f);
+         
         }
+
+
     }
 
     void FixedUpdate()
     {
+        
+
         if (Input.GetButtonDown("Fire"))
         {
             rockets.CurrentVal -= 1;

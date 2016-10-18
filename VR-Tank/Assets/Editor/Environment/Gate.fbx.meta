@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 062f2a71b8373034f9d20038b5318356
+timeCreated: 1476217474
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: DefensiveWall
+    100002: EdgeSupport
+    100004: EdgeSupport 1
+    100006: Face
+    100008: Face 1
+    100010: //RootNode
+    100012: Gate
+    100014: Gate 1
+    100016: GateSupportBanner
+    100018: group1
+    100020: group2
+    100022: Panel
+    100024: Panel 1
+    100026: Panel1
+    100028: Panel1 1
+    100030: Panel2
+    100032: Panel2 1
+    100034: Panel3
+    100036: Panel3 1
+    100038: Panel4
+    100040: Panel4 1
+    100042: Panel5
+    100044: Panel5 1
+    100046: Struts
+    100048: Struts 1
+    100050: Struts1
+    100052: Struts1 1
+    100054: Struts2
+    100056: Struts2 1
+    400000: DefensiveWall
+    400002: EdgeSupport
+    400004: EdgeSupport 1
+    400006: Face
+    400008: Face 1
+    400010: Gate
+    400012: //RootNode
+    400014: Gate 1
+    400016: GateSupportBanner
+    400018: group1
+    400020: group2
+    400022: Panel
+    400024: Panel 1
+    400026: Panel1
+    400028: Panel1 1
+    400030: Panel2
+    400032: Panel2 1
+    400034: Panel3
+    400036: Panel3 1
+    400038: Panel4
+    400040: Panel4 1
+    400042: Panel5
+    400044: Panel5 1
+    400046: Struts
+    400048: Struts 1
+    400050: Struts1
+    400052: Struts1 1
+    400054: Struts2
+    400056: Struts2 1
+    2300000: EdgeSupport
+    2300002: EdgeSupport 1
+    2300004: Face
+    2300006: Face 1
+    2300008: Gate 1
+    2300010: GateSupportBanner
+    2300012: Panel
+    2300014: Panel 1
+    2300016: Panel1
+    2300018: Panel1 1
+    2300020: Panel2
+    2300022: Panel2 1
+    2300024: Panel3
+    2300026: Panel3 1
+    2300028: Panel4
+    2300030: Panel4 1
+    2300032: Panel5
+    2300034: Panel5 1
+    2300036: Struts
+    2300038: Struts 1
+    2300040: Struts1
+    2300042: Struts1 1
+    2300044: Struts2
+    2300046: Struts2 1
+    3300000: EdgeSupport
+    3300002: EdgeSupport 1
+    3300004: Face
+    3300006: Face 1
+    3300008: Gate 1
+    3300010: GateSupportBanner
+    3300012: Panel
+    3300014: Panel 1
+    3300016: Panel1
+    3300018: Panel1 1
+    3300020: Panel2
+    3300022: Panel2 1
+    3300024: Panel3
+    3300026: Panel3 1
+    3300028: Panel4
+    3300030: Panel4 1
+    3300032: Panel5
+    3300034: Panel5 1
+    3300036: Struts
+    3300038: Struts 1
+    3300040: Struts1
+    3300042: Struts1 1
+    3300044: Struts2
+    3300046: Struts2 1
+    4300000: GateSupportBanner
+    4300002: Gate
+    4300004: EdgeSupport
+    4300006: Struts1
+    4300008: Face
+    4300010: Struts2
+    4300012: Struts
+    4300014: Panel5
+    4300016: Panel4
+    4300018: Panel3
+    4300020: Panel2
+    4300022: Panel1
+    4300024: Panel
+    4300026: EdgeSupport
+    4300028: Struts1
+    4300030: Face
+    4300032: Struts2
+    4300034: Struts
+    4300036: Panel5
+    4300038: Panel4
+    4300040: Panel3
+    4300042: Panel2
+    4300044: Panel1
+    4300046: Panel
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

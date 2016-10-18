@@ -10,6 +10,7 @@ public class WaveSpawn : MonoBehaviour
     public int Wave = 0;
     public List<GameObject> EnemyUnits;
     public List<GameObject> HardEnemies;
+
     public float NextSpawn = 1.0f;
     int HardCount = 0;
     public float WaveTimer = 0;
@@ -27,10 +28,6 @@ public class WaveSpawn : MonoBehaviour
         {
             CanSpawn = true;
         }
-        if (!NewWave)
-        {
-            SpawnNext();
-        }
 
         if (Input.GetKeyDown(KeyCode.Space) && !NewWave)
         {
@@ -46,26 +43,6 @@ public class WaveSpawn : MonoBehaviour
 
         NewWave = false;
     }
-
-    void SpawnNext()
-    {
-        GameObject[] EasyAi;
-        EasyAi = GameObject.FindGameObjectsWithTag("Easy");
-
-        GameObject[] HardAI;
-        HardAI = GameObject.FindGameObjectsWithTag("Hard");
-
-        if (EasyAi.Length == 0 && HardAI.Length == 0 && !NewWave)
-        {
-            NewWave = true;
-        }
-        else
-        {
-            NewWave = false;
-        }
-
-    }
-
 
     void NextWave()
     {

@@ -25,7 +25,7 @@ public class RandomPos : MonoBehaviour {
     IEnumerator ChangePosition()
     {
         canChange = false;
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(5.0f);
         oldPos = transform.position;
         RandomX = Random.Range(oldPos.x, Random.Range(oldPos.x + 40 , oldPos.x - 40));
         RandomZ = Random.Range(oldPos.z, Random.Range(oldPos.z + 40, oldPos.z - 40));

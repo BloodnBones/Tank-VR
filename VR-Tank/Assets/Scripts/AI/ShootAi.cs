@@ -9,23 +9,26 @@ public class ShootAi : MonoBehaviour
     public Transform bullet;
     public float projectileSpeed = 20;
     public float FireRate = 0.8f;
-    bool canShoot = true;
+    public bool canShoot = true;
     float randomChance = 0;
+    public float distance;
     // Use this for initialization
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");
+        canShoot = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        target = FindClosestEnemy();
+        distance = Vector3.Distance(target.transform.position, transform.position);
         randomChance = Random.Range(0, 100);
         if (target != null)
         {
-            if (Vector3.Distance(transform.position, target.transform.position) < 20 && canShoot)
+            if (Vector3.Distance(target.transform.position , transform.position) < 30 && canShoot)
             {
-
                 StartCoroutine("Shoot");
             }
         }
@@ -36,23 +39,47 @@ public class ShootAi : MonoBehaviour
         canShoot = false;
         // Instantiate the projectile at the position and rotation of this transform
         Transform clone;
-        Vector3 spawnPos = transform.position;
-     
-        spawnPos.z += 0.6f;
-        clone = Instantiate(bullet, spawnPos, transform.rotation) as Transform;
+       
+        Quaternion looktarget = Quaternion.LookRotation(target.transform.position - transform.position);
+        Quaternion targetHorizontal = transform.rotation;
+
+        targetHorizontal = looktarget;
+       // targetHorizontal.w = looktarget.w;
+
+        transform.rotation = targetHorizontal;
+
+        
+        clone = Instantiate(bullet, transform.position, transform.rotation) as Transform;
         
         // Add force to the cloned object in the object's forward direction
         clone.gameObject.GetComponent<Rigidbody>().AddForce(clone.forward * projectileSpeed);
-        // clone.rigidbody.AddForce(clone.transform.forward * shootForce);
 
-        BarrelParticle.GetComponent<ParticleSystem>().Play();
-        Barrel2Particle.GetComponent<ParticleSystem>().Play();
+   //     BarrelParticle.GetComponent<ParticleSystem>().Play();
+   //     Barrel2Particle.GetComponent<ParticleSystem>().Play();
         yield return new WaitForSeconds(FireRate);
         canShoot = true;
 
     }
 
-
+    GameObject FindClosestEnemy()
+    {
+        GameObject[] gos;
+        gos = GameObject.FindGameObjectsWithTag("Player");
+        GameObject closest = null;
+        float distance = Mathf.Infinity;
+        Vector3 position = transform.position;
+        foreach (GameObject go in gos)
+        {
+            Vector3 diff = go.transform.position - position;
+            float curDistance = diff.sqrMagnitude;
+            if (curDistance < distance)
+            {
+                closest = go;
+                distance = curDistance;
+            }
+        }
+        return closest;
+    }
 }
 
 
