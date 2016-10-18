@@ -22,7 +22,7 @@ public class Buggy_Rotate : MonoBehaviour {
             targetHorizontal.w = looktarget.w;
 
             transform.rotation = targetHorizontal;
-            Debug.DrawLine(transform.position, transform.parent.forward, Color.blue, 0.1f);
+           // Debug.DrawLine(transform.position, transform.parent.forward, Color.blue, 0.1f);
         }
     }
 

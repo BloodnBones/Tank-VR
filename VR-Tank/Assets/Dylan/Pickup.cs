@@ -7,7 +7,7 @@ public class Pickup : MonoBehaviour {
     public bool IsActive = true;
     public GameObject Child;
     public GameObject Secondary;
-    public WeaponType Weapon = WeaponType.CANNON;
+    public WeaponType Weapon = WeaponType.MACHINE_GUN;
  
     bool created = false;
 	// Use this for initialization

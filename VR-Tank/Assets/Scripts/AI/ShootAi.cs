@@ -8,7 +8,7 @@ public class ShootAi : MonoBehaviour
     GameObject target;
     public Transform bullet;
     public float projectileSpeed = 20;
-    public float FireRate = 0.8f;
+    public float FireRate = 2.0f;
     public bool canShoot = true;
     float randomChance = 0;
     public float distance;

@@ -20,7 +20,7 @@ public class TankController : MonoBehaviour {
         }
         else
         {
-            TanktoUse = 2;
+            TanktoUse = 1;
         }
 
         Tanks[TanktoUse].SetActive(true);

@@ -3,14 +3,14 @@ using System.Collections;
 
 public enum WeaponType : int
 {
-    CANNON,
     MACHINE_GUN,
+    ROCKETS,
     LAZER_BEAM,
     RAIL_GUN
 }
 public class Pickup_Weapon_Model : MonoBehaviour
 {
-    public WeaponType PickupType = WeaponType.CANNON;
+    public WeaponType PickupType = WeaponType.MACHINE_GUN;
 
     public float RotationSpeed = 0.0f;
 
